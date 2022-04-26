@@ -1,6 +1,7 @@
 # golang-crud
 
 # Route
+`Base Url: https://crud.kiyora-dev.xyz/`
 `Authorization: Bearer <token>`
 ```
 GET    /api/v1/home/          
