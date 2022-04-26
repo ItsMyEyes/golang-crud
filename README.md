@@ -15,6 +15,7 @@ GET    /api/v1/user/logout
 GET    /api/v1/               
 ```
 
+# Installation
 ```
   git clone https://github.com/ItsMyEyes/golang-crud //repo git
   code golang-crud // open vsc studio
