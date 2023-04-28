@@ -57,7 +57,11 @@ func MakeJWT(creds *entity.User) (string, error) {
 	}
 
 	user, _ := json.Marshal(creds)
-	redis.SetKey(u.String(), user, 10*time.Minute)
+	s := redis.SetKey(u.String(), user, 10*time.Minute)
+	if s.Err() != nil {
+		fmt.Println(s.Err())
+		return "", s.Err()
+	}
 
 	return tokenString, err
 }
